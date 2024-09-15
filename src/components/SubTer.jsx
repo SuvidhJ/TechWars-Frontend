@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import subter1Image from '../assets/subter1.png';
-import subter1ImageDamaged from '../assets/subter1-damaged.png';
-import subter2Image from '../assets/subter2.png';
-import subter2ImageDamaged from '../assets/subter2-damaged.png';
+import subter1Image from '../assets/subter1.webm';
+import subter1ImageDamaged from '../assets/subter1-damaged.webm';
+import subter2Image from '../assets/subter2.webm';
+import subter2ImageDamaged from '../assets/subter2-damaged.webm';
 
 const SubTer = ({ subTer, onEnemyAttack, onClick }) => {
   const getSubTerImage = (subTerType, damaged) => {
