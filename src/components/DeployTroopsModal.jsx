@@ -21,6 +21,9 @@ const DeployTroopsModal = ({ subTer, onDeploy }) => {
         <source src={videoBackground} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className = "time-parallel">
+        <span>Time Left: </span>
+      </div>
       <div className="modal-content">
         <input
           type="number"
