@@ -1,3 +1,13 @@
+@font-face{
+  font-family: 'GoodTimesRg';
+  src: url('../assets/fonts/GoodTimesRg.otf');
+}
+
+@font-face{
+  font-family: 'BattleStarItalic';
+  src: url('../assets/fonts/BattleStarItalic.ttf');
+}
+
 :root {
   --background-color: #aaa;
   --text-color: #fff;
@@ -34,7 +44,8 @@ body {
   background-color: rgba(128, 128, 128, 0.5); 
   display: flex; 
   flex-direction: column;                
-  color: white;                
+  color: white;
+  font-family: BattleStarItalic, Arial;                
   font-size: 16px;              
   text-align: left; 
   padding: 5px;
@@ -296,6 +307,29 @@ body {
   width: 90%;
 }
 
+.time-parallel {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  right: 50%;
+  top: 5%;
+  background-color: rgba(128, 128, 128, 0.5); 
+  display: flex; 
+  flex-direction: column;                
+  color: white;
+  font-family: BattleStarItalic, Arial;                
+  font-size: 16px;              
+  text-align: center; 
+  padding: 5px;
+  box-sizing: border-box; 
+  transform: skew(-40deg);
+}
+
+.time-parallel span {
+  display: block; 
+  margin-bottom: 5px;
+}
+
 .input-field {
   width: 16rem;
   padding: 0.75rem;
@@ -307,6 +341,7 @@ body {
   transition: box-shadow 0.2s;
   text-align: center;
   margin-bottom: 1rem;
+  font-family: GoodTimesRg, Arial;
   font-size: var(--font-size-base);
 }
 
@@ -317,6 +352,7 @@ body {
 .input-field::placeholder {
   color: #aaa;
   text-align: center;
+  font-family: GoodTimesRg, Arial;
   font-size: var(--font-size-small);
 }
 
@@ -327,6 +363,7 @@ body {
   background-color: var(--button-color);
   border-radius: var(--border-radius);
   outline: none;
+  font-family: GoodTimesRg, Arial;
   font-size: var(--font-size-base);
   cursor: pointer;
   transition: box-shadow 0.2s, transform 0.2s;
